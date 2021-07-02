@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Properties</title>
+    <link rel="stylesheet" href="assets/styles/layout.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>my website</h1>
+        <div class="sns">
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+        </div>
+        
+    </div>
+  
+    <div class="nav">
+        <img src="assets/images/gar.jpg" alt="logo">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <p>lorem5</p>
+    </div>
+    <div class="main">
+        <div class="section">
+            <div class="table-content">
+                <h2>table 5</h2>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>abc</th>
+                        <th>bbc</th>
+                        <th>cnn</th>
+                    </tr>
+                    <tr>
+                        <th>6pm-7pm</th>
+                        <td rowspan="2">movie</td>
+                        <td>comedy</td>
+                        <td>news</td>
+                    </tr>
+                    <tr>
+                        <th>7pm-8pm</th>
+                        <!-- <td></td> -->
+                        <td></td>
+                        <td>current affairs</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-content">
+                <h3>registration form</h3>
+                <form action="https://kredo.jp" method="get">
+                    <label for="fname">Your Full Name:</label>
+                    <input type="text" name="fullname" id="fname" placeholder="type your Last Name First Name" required minlength="3" maxlength="15">
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" placeholder="type your email here">
+
+                    <label for="pword">Your Password:</label>
+                    <input type="password" name="pword" id="pword" placeholder="type your password here.">
+
+                    <label for="age">Your Age:</label>
+                    <input type="number" name="age" id="age">
+
+                    <label for="bday">Your Birth Date:</label>
+                    <input type="date" name="birthday" id="bday">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your comment here."></textarea>
+                    <br>
+                    <input type="submit" name="submit" value="ok">
+                  
+                    
+                </form>
+            </div>
+        </div>
+        <div class="aside">
+            <div class="static">
+                <h3>static</h3>
+            </div>
+            <div class="relative">
+                <h3>relative</h3>
+            </div>
+            <div class="fixed">
+                <h3>fixed</h3>
+            </div>
+            <div class="absolute">
+                <h3>absolute</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ut ad porro recusandae expedita. Nisi.</p>
+            <div class="relative2">
+                <h3>relative 2</h3>
+                <div class="absolute">
+                    <h3>absolute 2</h3>
+                </div>
+            </div>
+        </div>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, voluptas officia. Cumque officiis quam vel deserunt aspernatur facere expedita exercitationem.</p> -->
+    </div>
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>

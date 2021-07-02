@@ -1,0 +1,231 @@
+
+    /* reset declaration */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: gray;
+}
+*{
+    color: green;
+}
+h3{
+    background-color: hotpink;
+}
+.taiga{
+    background-color: indigo;
+}
+h1{
+    background-color: lawngreen;
+} */
+/* 
+    descendant selector = space
+
+    and selector = ,
+*/
+ /* div h3,#kaname,ul,table{
+    background-color: magenta;
+} */
+
+/* 
+        text properties and values
+    font-family
+    font-size = 16px
+        unit values:
+            px =16px
+            %  = 100%
+            em = 1em
+    text-align
+    line-height
+        unit values
+            px
+            %
+            em
+            number spacing
+    letter-spacing
+    word-spacing
+    font-weight
+        300-900
+        bold
+        bolder
+    font-style
+    text-transform
+    text-decoration
+    text-shadow
+        text-shadow:x y z color;
+
+    hover
+        syntax:
+            selector:hover{
+                property:value;
+            }
+
+
+*/
+
+/* css boxmodel
+
+        border
+            syntax:
+                border:width style color;
+*/
+
+/* 
+
+            display property = convert
+                values:
+                    inline =tells the block element to display inline.
+                    
+                    block = tells the inline element to display block.
+
+                    inline-block =(hybrid)tells the block and inline element to display inline but get the behavior(margin,width,height) of the block element
+
+*/
+.heading-box{
+    border:6px double blue;
+    padding: 30px;
+}
+.box1{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    
+}
+.box2{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    margin:0 auto 10px auto;
+    text-align: center;
+    padding-top: 20px;
+}
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 3px 3px 5px black;
+    border: 4px solid red;
+    /* border-bottom: none; */
+    /* padding: 10px; */
+    /* margin: 10px 30px 20px 30px; */
+    width: 20%;
+    margin:0 auto 20px auto;
+    overflow: hidden;
+}
+h1:hover{
+    background-color: yellow;
+    color: green;
+    text-decoration: overline;
+    text-shadow: -3px -3px 5px black;
+}
+h2{
+    font-family: serif;
+    text-align: center;
+    letter-spacing: 16px;
+    text-transform: capitalize;
+    text-decoration: overline;
+    border-top: 5px dotted green;
+    border-right: 3px solid purple;
+    border-bottom: 6px dashed red;
+    border-left: 7px double black;
+    padding: 20px 5px;
+    margin-bottom: 20px;
+}
+h2:hover{
+    color: red;
+    background-color: hotpink;
+}
+h3{
+    font-family: monospace;
+    letter-spacing: 20px;
+    border: 4px solid red;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+}
+p{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height:2;
+    word-spacing: 10px;
+    font-weight: 600;
+    text-transform: lowercase;
+    border: 3px dashed red;
+    padding: 10px;
+}
+p span{
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: line-through;
+    border: 2px solid green;
+    padding: 5px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+p span:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: green;
+    font-weight: 900;
+    font-family: sans-serif;
+    border: 2px solid red;
+    padding: 20px 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: block;
+    width: 200px;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.heading-box ul{
+    border: 3px solid green;
+    list-style: none;
+}
+.heading-box ul li{
+    border: 2px dashed black;
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    display: inline-block;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: 10px groove gold;
+    padding: 10px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px;
+    display: block;
+}
+div ol{
+    list-style: upper-roman;
+}
+div ol li{
+    background-color: gray;
+    list-style-position: inside;
+}
+ol{
+    list-style: lower-roman;
+}
+ul{
+    list-style: lower-alpha;
+}
+

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first website</title>
+            <!-- external css -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+            <style>
+                /* internal css */
+                /* .taiga{
+                    background-color: yellowgreen;
+                }
+                #kaname{
+                    background-color: tomato;
+                } */
+            </style>
+
+
+
+</head>
+<body>
+    <!-- HEADING ELEMENTS = used for title of the content -->
+                <!-- inline css -->
+    <div class="heading-box">
+        <h1>hello world!</h1>
+        <h2 class="taiga">heading 2</h2>
+        <h3><span>h</span>eading 3</h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+        <p><span>Lorem ipsum dolor</span> sit amet consectetur, adipisicing elit. Minus voluptatibus dicta illo libero voluptates iste possimus ipsum. Accusamus porro expedita adipisci quia, facere odit iure, placeat, fuga fugit ut sit.</p>
+        <a href="#">learn more</a>
+        <a href="#">facebook</a>
+        <ul>
+            <li>twitter</li>
+            <li>instagram</li>
+            <li>youtube</li>
+            <li>pinterest</li>
+        </ul>
+        <img src="assets/images/car.jpg" alt="car photo">
+    </div>
+    <div class="box1">
+        box1
+    </div>
+    <div class="box2">
+        box2
+    </div>
+
+
+    <hr>
+
+    <!-- PARAGRAPH ELEMENT = used for text content -->
+    <p id="kaname">this is a paragraph element.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, blanditiis?</p>
+
+    <hr>
+
+    <!-- LIST ELEMENTS = used for list content
+            ol = ordered list(parent element)
+            ul = unordered list(parent element)
+            li = list item (child element)
+        syntax:
+            <ol>
+                <li>item1</li>
+                <li>item2</li>
+                ...
+            </ol>
+    
+    -->
+    <div style="background-color: teal;">
+        <h2>categories</h2>
+        <ol>
+            <li>
+            <span style="color: red;">travel</span> 
+                <ul>
+                    <li>asia</li>
+                    <li>south america</li>
+                    <li>australia</li>
+                </ul>
+            </li>
+            <li>sport</li>
+            <li>food</li>
+            <li>news</li>
+        </ol>
+    </div>
+    
+
+    <h2>courses</h2>
+    <ul>
+        <li>
+            web basic
+            <ol>
+                <li>photoshoo</li>
+                <li>wordpress</li>
+                <li>html&css</li>
+            </ol>
+        </li>
+        <li>web design</li>
+        <li>web development</li>
+    </ul>
+
+    <!-- inline elements
+            img element = an image element to display photo
+
+            img = element
+            src = attribute (source or url)
+            alt = attribute (alternative text or backup)
+            width
+            height
+
+    -->
+    <img src="assets/images/gar.jpg" alt="office garden photo" width="200px" height="200px">
+    <img src="assets/images/gar.jpg" alt="office garden photo" width="100px" height="100px">
+    <img src="assets/images/junk.jpg" alt="junkyard photo" width="150px" height="150px">
+
+    <!-- anchor element = used for hyperlink content
+            a = element (anchor)
+            href = attribute (hypertext reference or url)
+            target = attribute
+    
+    -->
+    <br>
+    <br>
+    <a href="https://facebook.com" target="blank">click to facebook</a>
+    <a href="https://twitter.com" target="joe">click to twitter</a>
+    <hr>
+    <hr>
+    <a href="https://kredo.jp" target="blank">click to kredo</a>
+
+    <!-- br = break line -->
+    <!-- hr = horizontal rule -->
+   
+    <!-- div and span
+            div = used to create a section or box and group block elements and inline elements.
+
+            span = group inline elements only and can select text.
+    -->
+
+    <div style="background-color: gray;">
+        <h3>this is a div box</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">learn more</a>
+        <img src="assets/images/car.jpg" alt="car photo" width="40px" height="40px">
+    </div>
+
+    <span style="background-color: aqua;">
+        <a href="#">facebook</a>
+        <a href="#">twitter</a>
+        <img src="assets/images/car.jpg" alt="car photo" width="40px" height="40px">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </span>
+
+    <!-- form elements = used to get information or data from the user
+    
+            elements:
+                form = parent element
+                label
+                input
+                section
+                option
+                textarea
+                button
+
+            attribute names:
+                action
+                method
+                type
+                name
+                id
+                for
+                placeholder
+                value
+                required
+                maxlenght
+                minlenght
+            
+            attribute values:
+                get
+                post
+                text
+                email
+                password
+                number
+                date
+                radio
+                checkbox
+                submit
+                
+    
+    -->
+    <h3>registration form</h3>
+    <form action="https://kredo.jp" method="get">
+        <label for="fname">Your Full Name:</label>
+        <input type="text" name="fullname" id="fname" placeholder="type your Last Name First Name" required minlength="3" maxlength="15">
+
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" placeholder="type your email here">
+
+        <label for="pword">Your Password:</label>
+        <input type="password" name="pword" id="pword" placeholder="type your password here.">
+
+        <label for="age">Your Age:</label>
+        <input type="number" name="age" id="age">
+
+        <label for="bday">Your Birth Date:</label>
+        <input type="date" name="birthday" id="bday">
+
+        <p>Choose your gender:</p>
+        <div>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" value="lgbt" id="lgbt">
+            <label for="lgbt">LGBT</label>
+        </div>
+
+        <p>Choose your favorite device/s:</p>
+        <div>
+            <input type="checkbox" name="device" value="laptop" id="laptop">
+            <label for="laptop">Laptop</label>
+
+            <input type="checkbox" name="device" value="ipad" id="ipad">
+            <label for="ipad">Ipad</label>
+
+            <input type="checkbox" name="device" value="tablet" id="tablet">
+            <label for="tablet">Tablet</label>
+        </div>
+        <br>
+        <label for="car">Select your favorite car:</label>
+        <select name="car" id="car">
+            <option value="none"></option>
+            <option value="honda">Honda</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="subaru">Subaru</option>
+            <option value="ford">Ford</option>
+        </select>
+        <br>
+
+        <label for="comment">Comments:</label>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Type your comment here."></textarea>
+        <br>
+        <input type="submit" name="submit" value="ok">
+      
+        
+    </form>
+
+    <!-- table elements
+    
+            elements:
+                table = parent element
+                tr = table row (row)
+                th = table header (column)
+                td = table data (column)
+            
+            attributes:
+                colspan = merge cells (merge column cells)
+                rowspan = merge cells (merge row cells)
+    -->
+    <h2>table 1 using table data</h2>
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <h2>table 2 using table data and table header</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>29</td>
+            <td>john@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>27</td>
+            <td>jane@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>40</td>
+            <td>joevsilver@gmail.com</td>
+           
+        </tr>
+    </table>
+
+    <h2>table using colspan</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact number</th>
+            <!-- <th></th> -->
+        </tr>
+        <tr>
+            <td>joe</td>
+            <td>123234</td>
+            <td>343434</td>
+        </tr>
+        <tr>
+            <td>Yohei</td>
+            <td colspan="2">545454</td>
+            <!-- <td>544354</td> -->
+        </tr>
+    </table>
+
+    <h2>table using rowspan</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <td>bill</td>
+            <td>steve</td>
+        </tr>
+        <tr>
+            <th rowspan="2">contact numbers</th>
+            <td>12323</td>
+            <td>43423</td>
+        </tr>
+        <tr>
+            <!-- <th>address</th> -->
+            <td>43434</td>
+            <td>43244</td>
+        </tr>
+    </table>
+
+    <h2>table 5</h2>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>abc</th>
+            <th>bbc</th>
+            <th>cnn</th>
+        </tr>
+        <tr>
+            <th>6pm-7pm</th>
+            <td rowspan="2">movie</td>
+            <td>comedy</td>
+            <td>news</td>
+        </tr>
+        <tr>
+            <th>7pm-8pm</th>
+            <!-- <td></td> -->
+            <td>sport</td>
+            <td>current affairs</td>
+        </tr>
+    </table>
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus placeat praesentium quasi similique velit amet.
+</body>
+</html>
